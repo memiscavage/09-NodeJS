@@ -4,6 +4,8 @@ var createGreeting = function(message, name) {
 };
 
 // We can safely swap out function expressions with arrow functions most of the time
+// Have an implicit return. Means that if the arrow function has only one expression, the function can be returned without having to 
+// use the return keyword
 var createGreeting = (message, name) => {
   return message + ", " + name + "!";
 };
